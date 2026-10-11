@@ -5,7 +5,7 @@ from dash import Dash, dcc, html, Input, Output
 
 # ---------------- LOAD DATA ----------------
 matches = pd.read_csv("matches.csv")
-deliveries = pd.read_csv("deliveries.csv")
+deliveries = pd.read_csv("deliveries.zip", compression="zip")
 
 matches["winner"] = matches["winner"].fillna("No Result")
 matches["season"] = matches["season"].astype(str)
