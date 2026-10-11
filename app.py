@@ -21,6 +21,7 @@ GREEN = "#10B981"
 PINK = "#EC4899"
 
 app = Dash(__name__)
+server = app.server
 app.title = "IPL Analytics Dashboard"
 
 seasons = sorted(matches["season"].unique())
